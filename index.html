@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Forest School at St Cronan's NS" />
+  <title>Forest School | St Cronan's NS</title>
+  <link rel="preconnect" href="https://images-pw.pixieset.com" />
+  <style>
+    :root{
+      --ink:#253027;
+      --muted:#6c746d;
+      --paper:#f6f4ee;
+      --cream:#ebe8df;
+      --green:#65725f;
+      --line:rgba(37,48,39,.16);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--ink);
+      background:var(--paper);
+      font-family:Arial, Helvetica, sans-serif;
+      -webkit-font-smoothing:antialiased;
+    }
+    img{display:block;width:100%;height:100%;object-fit:cover}
+    a{color:inherit}
+    .shell{width:min(1160px, calc(100% - 40px));margin-inline:auto}
+
+    .hero{
+      min-height:92vh;
+      position:relative;
+      display:grid;
+      place-items:center;
+      isolation:isolate;
+      background:#223327;
+      overflow:hidden;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;inset:0;z-index:-2;
+      background:url('https://images-pw.pixieset.com/site/N0L9P7/lkoJbo/sitspotphotoFSpilot2026-7553b958-1500.jpg') center 53%/cover no-repeat;
+      transform:scale(1.01);
+    }
+    .hero::after{
+      content:"";
+      position:absolute;inset:0;z-index:-1;
+      background:linear-gradient(to bottom,rgba(12,24,14,.22),rgba(12,24,14,.48));
+    }
+    .hero-copy{text-align:center;color:white;padding:80px 20px}
+    .hero h1{
+      margin:0;
+      font-family:Georgia, 'Times New Roman', serif;
+      font-size:clamp(58px,10vw,132px);
+      font-weight:400;
+      line-height:.88;
+      letter-spacing:-.045em;
+      text-shadow:0 2px 24px rgba(0,0,0,.18);
+    }
+    .hero p{
+      margin:24px 0 0;
+      text-transform:uppercase;
+      letter-spacing:.27em;
+      font-size:clamp(12px,1.2vw,16px);
+      font-weight:600;
+    }
+
+    .intro{padding:110px 0 115px}
+    .intro-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+    .intro-image{height:660px;overflow:hidden}
+    .eyebrow{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}
+    h2{
+      margin:0 0 28px;
+      font-family:Georgia, 'Times New Roman', serif;
+      font-weight:400;
+      font-size:clamp(42px,6vw,76px);
+      line-height:1.02;
+      letter-spacing:-.035em;
+    }
+    .intro-copy p{
+      font-family:Georgia, 'Times New Roman', serif;
+      font-size:clamp(18px,2vw,24px);
+      line-height:1.55;
+      margin:0 0 34px;
+      color:#3f4841;
+    }
+    .button{
+      display:inline-block;
+      padding:15px 24px 13px;
+      border:1px solid var(--ink);
+      text-decoration:none;
+      text-transform:uppercase;
+      font-size:11px;
+      letter-spacing:.18em;
+      transition:.2s ease;
+    }
+    .button:hover{background:var(--ink);color:white}
+
+    .quote-section{background:var(--cream);padding:110px 0}
+    .quote-wrap{max-width:900px;margin:auto;text-align:center}
+    .quote-wrap .eyebrow{margin-bottom:28px}
+    blockquote{
+      margin:0;
+      font-family:Georgia, 'Times New Roman', serif;
+      font-size:clamp(27px,4.4vw,52px);
+      line-height:1.2;
+      letter-spacing:-.025em;
+    }
+
+    .gallery{padding:24px 24px 0;background:var(--paper)}
+    .masonry{display:grid;grid-template-columns:repeat(12,1fr);gap:24px;grid-auto-rows:95px}
+    .tile{overflow:hidden;background:#ddd}
+    .tile img{transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+    .tile:hover img{transform:scale(1.025)}
+    .t1{grid-column:1/8;grid-row:span 6}
+    .t2{grid-column:8/13;grid-row:span 6}
+    .t3{grid-column:1/6;grid-row:span 6}
+    .t4{grid-column:6/13;grid-row:span 6}
+    .t5{grid-column:1/8;grid-row:span 7}
+    .t6{grid-column:8/13;grid-row:span 7}
+
+    footer{padding:72px 20px 58px;text-align:center;color:#7b817c;font-size:11px;letter-spacing:.08em}
+    footer a{text-decoration:none;border-bottom:1px solid currentColor}
+
+    @media (max-width:800px){
+      .shell{width:min(100% - 28px, 1160px)}
+      .hero{min-height:78vh}
+      .intro{padding:78px 0}
+      .intro-grid{grid-template-columns:1fr;gap:45px}
+      .intro-image{height:72vw;min-height:420px;max-height:620px}
+      .gallery{padding:14px 14px 0}
+      .masonry{display:block}
+      .tile{height:auto;aspect-ratio:4/3;margin-bottom:14px}
+      .t2,.t5{aspect-ratio:3/4}
+      .quote-section{padding:78px 20px}
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" aria-label="Forest School hero image">
+    <div class="hero-copy">
+      <h1>Forest School</h1>
+      <p>at St Cronan's NS</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <div class="shell intro-grid">
+        <figure class="intro-image" style="margin:0">
+          <img src="https://images-pw.pixieset.com/site/N0L9P7/1mMrX6/FSphotopilotgroup-19aae186-1500.jpg" alt="Gathering in the meadow" loading="lazy" />
+        </figure>
+        <div class="intro-copy">
+          <div class="eyebrow">Outdoor learning</div>
+          <h2>What is Forest School?</h2>
+          <p>Forest School is a child-centred approach to learning in nature, built around regular outdoor experiences, exploration, creativity, confidence and connection with the natural world.</p>
+          <a class="button" href="https://www.naturebasedlearning.ie" target="_blank" rel="noopener">Read more</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <div class="quote-wrap">
+        <div class="eyebrow">Parent review 2026</div>
+        <blockquote>“... x can be nervous around new activities that are outside the norm and Forest School has pushed him in a really positive way. He ended up looking forward to it so much each week and the only negative I could say is he would've liked more! An excellent addition to the curriculum”</blockquote>
+      </div>
+    </section>
+
+    <section class="gallery" aria-label="Forest School photo gallery">
+      <div class="masonry">
+        <figure class="tile t1" style="margin:0"><img src="https://images-pw.pixieset.com/site/N0L9P7/YOQ1en/FSphotopilotgroupcircle-f097cbe8-1500.jpg" alt="Break time at Base Camp" loading="lazy" /></figure>
+        <figure class="tile t2" style="margin:0"><img src="https://images-pw.pixieset.com/site/N0L9P7/OQlxJ7/FSphotopilotfairyfires-4fe6187c-1500.jpg" alt="Fairy Fires activity" loading="lazy" /></figure>
+        <figure class="tile t3" style="margin:0"><img src="https://images-pw.pixieset.com/site/N0L9P7/ElxOwW/FSphotopilotweaving-1f8ffe02-1500.jpg" alt="Weaving activity" loading="lazy" /></figure>
+        <figure class="tile t4" style="margin:0"><img src="https://images-pw.pixieset.com/site/N0L9P7/o6RLLP/bluebellFSpilot2026-d6291de2-1500.jpg" alt="Bluebell in the forest" loading="lazy" /></figure>
+        <figure class="tile t5" style="margin:0"><img src="https://images-pw.pixieset.com/site/N0L9P7/exzDo0/FSphotopilotjourney-7962156f-1500.jpg" alt="Journey to Base Camp" loading="lazy" /></figure>
+        <figure class="tile t6" style="margin:0"><img src="https://images-pw.pixieset.com/site/N0L9P7/lkoJbo/sitspotphotoFSpilot2026-7553b958-1500.jpg" alt="Quiet reflection during a sit spot" loading="lazy" /></figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Inspired by the current Forest School at St Cronan's NS page · <a href="https://forestschoolstcronans.mypixieset.com/" target="_blank" rel="noopener">View original</a>
+  </footer>
+</body>
+</html>
