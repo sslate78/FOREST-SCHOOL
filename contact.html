@@ -70,16 +70,11 @@
           </p>
 
           <form
+            id="contact-form"
             class="contact-form"
-            action="https://formsubmit.co/forestschoolstcronans@gmail.com"
+            action="https://formsubmit.co/ajax/forestschoolstcronans@gmail.com"
             method="POST"
           >
-
-            <input
-              type="hidden"
-              name="_next"
-              value="https://forestschoolstcronans.ie/thank-you.html"
-            >
 
             <input
               type="hidden"
@@ -158,6 +153,8 @@
               Send message
             </button>
 
+            <p id="form-status" class="form-help" role="status" aria-live="polite"></p>
+
             <p class="form-help">
               Your message will be sent to forestschoolstcronans@gmail.com.
             </p>
@@ -182,6 +179,7 @@
   </footer>
 
   <script src="js/menu.js"></script>
+  <script src="js/contact-ajax.js"></script>
 
 </body>
 </html>
