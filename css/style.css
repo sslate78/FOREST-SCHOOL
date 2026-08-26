@@ -493,3 +493,8 @@ body.lightbox-open{overflow:hidden}
 @media (prefers-reduced-motion:reduce){
   .portfolio-photo img,.portfolio-photo-overlay{transition:none}
 }
+
+/* Green divider above footer */
+footer {
+    border-top: 3px solid #1f5132;
+}
