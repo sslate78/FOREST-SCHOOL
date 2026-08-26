@@ -494,7 +494,14 @@ body.lightbox-open{overflow:hidden}
   .portfolio-photo img,.portfolio-photo-overlay{transition:none}
 }
 
-/* Green divider above footer */
+/* Space between final images and footer */
 footer {
+    margin-top: 60px;
     border-top: 3px solid #1f5132;
+}
+
+@media (max-width: 768px) {
+    footer {
+        margin-top: 40px;
+    }
 }
