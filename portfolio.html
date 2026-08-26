@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Forest School St Cronan's photo portfolio" />
+  <title>Portfolio | Forest School St Cronan's</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header inner-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="index.html" aria-label="Forest School St Cronan's home"><img src="images/logo.png" alt="Forest School at St Cronan's NS" /></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu"><span></span></button>
+      <nav class="site-nav" id="site-menu" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="portfolio.html" aria-current="page">Portfolio</a><a href="contact.html">Contact</a></nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero portfolio-hero">
+      <div class="shell">
+        <div class="eyebrow">Portfolio</div>
+        <h1>Forest School in action.</h1>
+        <p>A growing collection of outdoor learning, creativity, exploration and shared experiences at St Cronan's NS.</p>
+      </div>
+    </section>
+
+    <section class="content-section portfolio-section">
+      <div class="shell">
+        <div class="gallery-intro">
+          <div>
+            <div class="eyebrow">Our gallery</div>
+            <h2>Learning outdoors</h2>
+          </div>
+          <p>Explore moments from Forest School. Select any photograph to open the full-size gallery viewer.</p>
+        </div>
+
+        <div class="portfolio-masonry" data-gallery aria-label="Forest School photo gallery"></div>
+        <p class="gallery-empty" data-gallery-empty hidden>No gallery photographs have been added yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="gallery-lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="Gallery image viewer">
+    <div class="lightbox-topbar">
+      <div class="lightbox-count" data-lightbox-counter aria-live="polite"></div>
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close image viewer">×</button>
+    </div>
+    <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="Previous image">‹</button>
+    <figure class="lightbox-figure">
+      <img src="" alt="" data-lightbox-image />
+      <figcaption data-lightbox-caption></figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="Next image">›</button>
+  </div>
+
+  <footer><nav class="footer-nav" aria-label="Footer navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a></nav>Forest School at St Cronan's NS 2026</footer>
+  <script src="js/menu.js"></script>
+  <script src="js/gallery-data.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>
