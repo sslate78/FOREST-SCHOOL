@@ -5,64 +5,177 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="description" content="Contact Forest School at St Cronan's NS" />
   <title>Contact | Forest School St Cronan's</title>
+
   <link rel="icon" type="image/png" href="images/favicon2.png">
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
+
   <header class="site-header inner-header">
     <div class="shell nav-wrap">
-      <a class="brand" href="index.html" aria-label="Forest School St Cronan's home"><img src="images/logo.png" alt="Forest School at St Cronan's NS" /></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Open menu"><span></span></button>
-      <nav class="site-nav" id="site-menu" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="contact.html" aria-current="page">Contact</a></nav>
+
+      <a class="brand" href="index.html" aria-label="Forest School St Cronan's home">
+        <img src="images/logo.png" alt="Forest School at St Cronan's NS" />
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-menu"
+        aria-label="Open menu">
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-menu" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+
     </div>
   </header>
 
   <main>
-    <section class="page-hero"><div class="shell"><div class="eyebrow">Contact</div><h1>For further information, please get in touch.</h1></div></section>
+
+    <section class="page-hero">
+      <div class="shell">
+        <div class="eyebrow">Contact</div>
+        <h1>For further information, please get in touch.</h1>
+      </div>
+    </section>
+
     <section class="content-section">
       <div class="shell contact-layout">
-        <figure class="contact-image"><img src="images/FSphotopilotgroup.jpg" alt="Children taking part in Forest School" /></figure>
-        <div class="contact-panel">
-          <div class="eyebrow">Forest School St Cronan's</div>
-          <h2>We'd be happy to hear from you.</h2>
-          <p>For questions about Forest School activities, facilitation, policies or the programme at St Cronan's NS, send us a message using the form below.</p>
 
-          <form class="contact-form" action="https://formsubmit.co/forestschoolstcronans@gmail.com" method="POST">
-            <input type="hidden" name="_subject" value="New Forest School website enquiry" />
-            <input type="hidden" name="_template" value="table" />
-            <input type="hidden" name="_next" value="https://forestschoolstcronans.ie/thank-you.html" />
-            <input class="form-honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+        <figure class="contact-image">
+          <img
+            src="images/FSphotopilotgroup.jpg"
+            alt="Children taking part in Forest School"
+          />
+        </figure>
+
+        <div class="contact-panel">
+
+          <div class="eyebrow">Forest School St Cronan's</div>
+
+          <h2>We'd be happy to hear from you.</h2>
+
+          <p>
+            For questions about Forest School activities, facilitation,
+            policies or the programme at St Cronan's NS, send us a message
+            using the form below.
+          </p>
+
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/forestschoolstcronans@gmail.com"
+            method="POST"
+          >
+
+            <input
+              type="hidden"
+              name="_next"
+              value="https://forestschoolstcronans.ie/thank-you.html"
+            >
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Forest School Website Enquiry"
+            >
+
+            <input
+              type="hidden"
+              name="_template"
+              value="table"
+            >
+
+            <input
+              class="form-honey"
+              type="text"
+              name="_honey"
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+            >
 
             <div class="form-row">
+
               <div class="form-field">
                 <label for="name">Name</label>
-                <input id="name" name="name" type="text" autocomplete="name" required />
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  autocomplete="name"
+                  required
+                />
               </div>
+
               <div class="form-field">
                 <label for="email">Email</label>
-                <input id="email" name="email" type="email" autocomplete="email" required />
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  required
+                />
               </div>
+
             </div>
 
             <div class="form-field">
               <label for="subject">Subject</label>
-              <input id="subject" name="subject" type="text" required />
+              <input
+                id="subject"
+                name="subject"
+                type="text"
+                required
+              />
             </div>
 
             <div class="form-field">
               <label for="message">Message</label>
-              <textarea id="message" name="message" rows="7" required></textarea>
+              <textarea
+                id="message"
+                name="message"
+                rows="7"
+                required
+              ></textarea>
             </div>
 
-            <button class="contact-submit" type="submit">Send message</button>
-            <p class="form-help">Your message will be sent to sslater@stcronans.net. The form uses FormSubmit to deliver website enquiries.</p>
+            <button class="contact-submit" type="submit">
+              Send message
+            </button>
+
+            <p class="form-help">
+              Your message will be sent to forestschoolstcronans@gmail.com.
+            </p>
+
           </form>
+
         </div>
       </div>
     </section>
+
   </main>
 
-  <footer><nav class="footer-nav" aria-label="Footer navigation"><a href="index.html">Home</a><a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="contact.html">Contact</a></nav>Forest School at St Cronan's NS 2026</footer>
-<script src="js/menu.js"></script>
+  <footer>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    Forest School at St Cronan's NS 2026
+  </footer>
+
+  <script src="js/menu.js"></script>
+
 </body>
 </html>
