@@ -1,0 +1,44 @@
+name: Automatically Update Forest School Gallery
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'images/**'
+      - 'scripts/build-gallery.py'
+      - '.github/workflows/update-gallery.yml'
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-gallery:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download website files
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate gallery from images folder
+        run: python scripts/build-gallery.py
+
+      - name: Save updated gallery
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/gallery-data.js
+
+          if ! git diff --cached --quiet; then
+            git commit -m "Automatically update photo gallery"
+            git push
+          fi
