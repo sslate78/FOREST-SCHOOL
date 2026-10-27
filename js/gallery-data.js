@@ -39,9 +39,5 @@ window.FOREST_GALLERY_IMAGES = [
   {
     "src": "images/playphotoFSpilot.jpg",
     "caption": "Play FS"
-  },
-  {
-    "src": "images/WhatsApp Image 2026-10-23 at 14.49.32.jpeg",
-    "caption": "Whats App Image 2026 10 23 at 14.49.32"
   }
 ];
