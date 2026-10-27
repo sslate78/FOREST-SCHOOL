@@ -5,6 +5,26 @@ window.FOREST_GALLERY_IMAGES = [
     "caption": "Bluebell FS"
   },
   {
+    "src": "images/FS Camp.jpeg",
+    "caption": "Forest School Camp"
+  },
+  {
+    "src": "images/FS Marshmallow 2.jpeg",
+    "caption": "Forest School Marshmallow 2"
+  },
+  {
+    "src": "images/FS Marshmellow.jpeg",
+    "caption": "Forest School Marshmellow"
+  },
+  {
+    "src": "images/FS TEA.jpeg",
+    "caption": "Forest School TEA"
+  },
+  {
+    "src": "images/FS Vis jackets.jpeg",
+    "caption": "Forest School Vis jackets"
+  },
+  {
     "src": "images/FSphotopilotbowsaw.jpg",
     "caption": "FS bowsaw"
   },
