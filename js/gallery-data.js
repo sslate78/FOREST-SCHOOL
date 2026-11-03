@@ -57,6 +57,30 @@ window.FOREST_GALLERY_IMAGES = [
     "caption": "FSWoods"
   },
   {
+    "src": "images/IMG_6493.jpeg",
+    "caption": "IMG 6493"
+  },
+  {
+    "src": "images/IMG_6505.jpeg",
+    "caption": "IMG 6505"
+  },
+  {
+    "src": "images/IMG_6606.jpeg",
+    "caption": "IMG 6606"
+  },
+  {
+    "src": "images/IMG_6609.jpeg",
+    "caption": "IMG 6609"
+  },
+  {
+    "src": "images/IMG_6618.jpeg",
+    "caption": "IMG 6618"
+  },
+  {
+    "src": "images/IMG_6621.jpeg",
+    "caption": "IMG 6621"
+  },
+  {
     "src": "images/playphotoFSpilot.jpg",
     "caption": "Play FS"
   }
